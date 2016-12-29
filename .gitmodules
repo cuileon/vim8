@@ -10,3 +10,6 @@
 [submodule "pack/start/vim-colors-solarized"]
 	path = pack/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "pack/start/EasyGrep"]
+	path = pack/start/EasyGrep
+	url = git@github.com:vim-scripts/EasyGrep.git
