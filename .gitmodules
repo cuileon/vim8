@@ -1,15 +1,15 @@
-[submodule "pack/start/nerdtree"]
-	path = pack/start/nerdtree
+[submodule "pack/plugin/start/nerdtree"]
+	path = pack/plugin/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/start/ctrlp.vim"]
-	path = pack/start/ctrlp.vim
+[submodule "pack/plugin/start/ctrlp.vim"]
+	path = pack/plugin/start/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
-[submodule "pack/start/vim-airline"]
-	path = pack/start/vim-airline
+[submodule "pack/plugin/start/vim-airline"]
+	path = pack/plugin/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
-[submodule "pack/start/vim-colors-solarized"]
-	path = pack/start/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "pack/start/EasyGrep"]
-	path = pack/start/EasyGrep
+[submodule "pack/plugin/start/EasyGrep"]
+	path = pack/plugin/start/EasyGrep
 	url = git@github.com:vim-scripts/EasyGrep.git
+[submodule "pack/colors/start/vim-colors-solarized"]
+	path = pack/colors/start/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
