@@ -1,4 +1,6 @@
 set nocompatible
+filetype plugin on
+autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
