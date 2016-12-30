@@ -10,21 +10,18 @@
 [submodule "pack/plugin/start/EasyGrep"]
 	path = pack/plugin/start/EasyGrep
 	url = git@github.com:vim-scripts/EasyGrep.git
-[submodule "pack/colors/start/vim-colors-solarized"]
-	path = pack/colors/start/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "pack/plugin/start/phpcomplete.vim"]
-	path = pack/plugin/start/phpcomplete.vim
-	url = git@github.com:shawncplus/phpcomplete.vim.git
 [submodule "pack/plugin/start/tagbar"]
 	path = pack/plugin/start/tagbar
 	url = git@github.com:majutsushi/tagbar.git
 [submodule "pack/plugin/start/taglist.vim"]
 	path = pack/plugin/start/taglist.vim
 	url = git@github.com:vim-scripts/taglist.vim.git
-[submodule "pack/plugin/start/molokai"]
-	path = pack/plugin/start/molokai
-	url = git@github.com:tomasr/molokai.git
+[submodule "pack/plugin/start/phpcomplete.vim"]
+	path = pack/plugin/start/phpcomplete.vim
+	url = git@github.com:shawncplus/phpcomplete.vim.git
+[submodule "pack/colors/start/vim-colors-solarized"]
+	path = pack/colors/start/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "pack/colors/start/molokai"]
 	path = pack/colors/start/molokai
 	url = git@github.com:tomasr/molokai.git
