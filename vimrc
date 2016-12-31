@@ -1,4 +1,6 @@
 set nocompatible
+let Tlist_Ctags_Cmd = 'ctags'
+let g:tagbar_ctags_bin = 'C:\Ctags5.8\ctags.exe'
 filetype plugin on
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
 source $VIMRUNTIME/vimrc_example.vim
