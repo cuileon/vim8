@@ -22,3 +22,12 @@
 [submodule "pack/colors/start/molokai"]
 	path = pack/colors/start/molokai
 	url = git@github.com:tomasr/molokai.git
+[submodule "pack/plugin/start/phpcomplete.vim"]
+	path = pack/plugin/start/phpcomplete.vim
+	url = git@github.com:shawncplus/phpcomplete.vim.git
+[submodule "pack/plugin/start/vim-fugitive"]
+	path = pack/plugin/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "pack/colors/start/vim-airline-themes"]
+	path = pack/colors/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
