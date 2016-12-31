@@ -16,9 +16,6 @@
 [submodule "pack/plugin/start/taglist.vim"]
 	path = pack/plugin/start/taglist.vim
 	url = git@github.com:vim-scripts/taglist.vim.git
-[submodule "pack/plugin/start/phpcomplete.vim"]
-	path = pack/plugin/start/phpcomplete.vim
-	url = git@github.com:shawncplus/phpcomplete.vim.git
 [submodule "pack/colors/start/vim-colors-solarized"]
 	path = pack/colors/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
