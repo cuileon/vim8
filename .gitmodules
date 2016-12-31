@@ -34,3 +34,6 @@
 [submodule "pack/fonts/consolas-powerline-vim"]
 	path = pack/fonts/consolas-powerline-vim
 	url = git@github.com:eugeii/consolas-powerline-vim.git
+[submodule "pack/plugin/start/vim-markdown"]
+	path = pack/plugin/start/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
