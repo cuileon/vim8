@@ -34,6 +34,27 @@
 [submodule "pack/fonts/consolas-powerline-vim"]
 	path = pack/fonts/consolas-powerline-vim
 	url = git@github.com:eugeii/consolas-powerline-vim.git
-[submodule "pack/plugin/start/vim-markdown"]
-	path = pack/plugin/start/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "pack/plugin/start/vim-session"]
+	path = pack/plugin/start/vim-session
+	url = git@github.com:xolox/vim-session.git
+[submodule "pack/plugin/start/vim-misc"]
+	path = pack/plugin/start/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule "pack/plugin/start/vim-easytags"]
+	path = pack/plugin/start/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
+[submodule "pack/plugin/start/phpctags"]
+	path = pack/plugin/start/phpctags
+	url = git@github.com:vim-php/phpctags.git
+[submodule "pack/plugin/start/tagbar-phpctags.vim"]
+	path = pack/plugin/start/tagbar-phpctags.vim
+	url = git@github.com:vim-php/tagbar-phpctags.vim.git
+[submodule "pack/plugin/start/nerdcommenter"]
+	path = pack/plugin/start/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "pack/plugin/start/syntastic"]
+	path = pack/plugin/start/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "pack/plugin/start/supertab"]
+	path = pack/plugin/start/supertab
+	url = git@github.com:ervandew/supertab.git

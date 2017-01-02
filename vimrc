@@ -49,19 +49,16 @@ set background=dark
 " colorscheme molokai
 colorscheme solarized
 
+" Airline配置
 " 总是显示状态行
 set laststatus=2
-
-"防止特殊符号无法正常显示
+" 防止特殊符号无法正常显示
 set ambiwidth=double
-
-" Airline配置
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-
 " old vim-powerline symbols
 let g:airline_left_sep = '⮀'
 let g:airline_left_alt_sep = '⮁'
@@ -70,22 +67,32 @@ let g:airline_right_alt_sep = '⮃'
 let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
-
 " Airline中显示tabline
 let g:airline#extensions#tabline#enabled = 1
-" tabline中当前buffer两端的分隔符
-let g:airline#extensions#tabline#left_sep = '⮀'
-" tabline为激活的buffer的两端字符
-let g:airline#extensions#tabline#left_alt_sep = '⮁'
-" tabline显示编号
-let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " NERDTree配置
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-
-let Tlist_Ctags_Cmd = 'ctags'
-let g:tagbar_ctags_bin = 'C:\Ctags5.8\ctags.exe'
+" ctags配置
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
+"let g:tagbar_ctags_bin = 'C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags.cmd'
+"let g:tagbar_phpctags_bin = 'C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags.cmd'
+let g:tagbar_phpctags_memory_limit = '512M'
+"let g:easytags_cmd = 'E:\xampp\php\php.exe C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags %*'
+" 关闭自动完成的preview
+set completeopt=menu
 
+" NERDTree
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" session
+let g:session_autosave = 'no'
+
+" 语法检查
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_highlighting=1
+let g:syntastic_php_checkers = ['php']
+let g:syntastic_javascript_checkers = ['jsl', 'jshint']
+let g:syntastic_html_checkers=['tidy', 'jshint']
