@@ -69,7 +69,6 @@ let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 " Airline中显示tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
@@ -89,11 +88,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " ctags配置
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
-"let g:tagbar_ctags_bin = 'C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags.cmd'
-"let g:tagbar_phpctags_bin = 'C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags.cmd'
 let g:tagbar_phpctags_memory_limit = '512M'
-"let g:easytags_cmd = 'E:\xampp\php\php.exe C:\Users\cuiliang\vimfiles\pack\plugin\start\phpctags\bin\phpctags %*'
-" 关闭自动完成的preview
 set completeopt=menu
 
 " NERDTree
