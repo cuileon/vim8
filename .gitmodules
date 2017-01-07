@@ -58,3 +58,12 @@
 [submodule "pack/plugin/start/supertab"]
 	path = pack/plugin/start/supertab
 	url = git@github.com:ervandew/supertab.git
+[submodule "pack/plugin/start/YouCompleteMe"]
+	path = pack/plugin/start/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "pack/plugin/start/neocomplete.vim"]
+	path = pack/plugin/start/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "pack/plugin/start/vim-php-namespace"]
+	path = pack/plugin/start/vim-php-namespace
+	url = git@github.com:arnaud-lb/vim-php-namespace.git
