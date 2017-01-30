@@ -17,7 +17,7 @@ composer update
 ## 环境变量
 将 `vimfiles/pack/bin` 加入系统环境变量
 ```
-export PATH=~/.vim/pack/bin:$PATH
+export PATH=~/.vim/pack/plugin/start/phpctags/bin:$PATH
 ```
 
 ## 安装字体
