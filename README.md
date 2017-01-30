@@ -1,9 +1,13 @@
 # vim8
 
-## 克隆文件
+## 安装
 ```
 cd ~
+//for windows
 git clone git@github.com:cui-liang/vim8.git vimfiles
+
+//for mac
+git clone git@github.com:cui-liang/vim8.git .vim
 cd vimfiles
 git submodule update --init --recursive
 cd pack/plugin/start/phpctags
