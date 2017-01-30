@@ -16,6 +16,9 @@ composer update
 
 ## 环境变量
 将 `vimfiles/pack/bin` 加入系统环境变量
+```
+export PATH=~/.vim/pack/bin:$PATH
+```
 
 ## 安装字体
 将 `vimfiles/pack/fonts/consolas-powerline-vim/` 目录下的字体文件复制到 `C:\Windows\Fonts\` 下
