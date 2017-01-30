@@ -22,3 +22,5 @@ composer update
 
 ## 支持lua
 将 `vimfiles/pack/bin` 目录下的 lua53.dll 放到 `gvim.exe` 同目录下
+
+mac 安装lua `brew install lua`
