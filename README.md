@@ -1,20 +1,24 @@
 # vim8
 
-## 安装
+## windows 安装
 ```
 cd ~
-//for windows
 git clone git@github.com:cui-liang/vim8.git vimfiles
-
-//for mac
-git clone git@github.com:cui-liang/vim8.git .vim
 cd vimfiles
 git submodule update --init --recursive
 cd pack/plugin/start/phpctags
 composer update
 ```
 
-## 环境变量
+## mac 安装
+```
+git clone git@github.com:cui-liang/vim8.git .vim
+cd .vim
+git submodule update --init --recursive
+brew install lua ctags homebrew/php/phpctags
+```
+
+## windows 设置环境变量
 将 `vimfiles/pack/bin` 加入系统环境变量
 
 ## 安装字体
@@ -22,3 +26,5 @@ composer update
 
 ## 支持lua
 将 `vimfiles/pack/bin` 目录下的 lua53.dll 放到 `gvim.exe` 同目录下
+
+mac 安装lua 
