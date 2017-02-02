@@ -21,7 +21,7 @@ if has('win32') || has('win64')
     source $VIMRUNTIME/menu.vim 
 
     " 设置字体
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
+    set guifont=Inconsolata-g\ for\ Powerline
 
     " 防止特殊符号无法正常显示
     set ambiwidth=double
@@ -29,6 +29,7 @@ if has('win32') || has('win64')
 else
     " 设置字体
     set guifont=Monaco\ for\ Powerline
+    set guifontwide=Microsoft_YaHei_Mono:h12
 
     "设置菜单为中文
     set langmenu=zh_CN.UTF-8
@@ -55,10 +56,11 @@ set noswapfile
 syntax enable
 
 " 设置深色背景
+set t_Co=256
 set background=dark
 
 " 设置主题
-" colorscheme molokai
+"colorscheme molokai
 colorscheme solarized
 
 " Airline配置
@@ -86,8 +88,8 @@ nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 
 " NERDTree配置
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrowExpandable = '▶'
+let g:NERDTreeDirArrowCollapsible = '▼'
 
 " ctags配置
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
@@ -177,3 +179,12 @@ autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+"搜索增强，忽略大小写匹配
+set hlsearch incsearch smartcase ignorecase
+
+"ctrlp搜索太慢,这样忽略掉不需要的目录和权限即可
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  'vendor/bundle/*\|vendor/cache/*\|public\|spec',
+      \ 'file': '\v\.(exe|so|dll|swp|log|jpg|png|json)$',
+      \ }
