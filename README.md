@@ -18,10 +18,15 @@ git submodule update --init --recursive
 brew install lua ctags homebrew/php/phpctags
 ```
 
+## windows 安装 phpctags
+cd ~/usr/local/bin
+curl -Ss http://vim-php.com/phpctags/install/phpctags.phar > phpctags
+
 ## windows 设置环境变量
 将 `vimfiles/pack/bin` 加入系统环境变量
 
 ## 安装字体
+windows https://github.com/eugeii/consolas-powerline-vim/raw/master/CONSOLA-Powerline.ttf
 将 `vimfiles/pack/fonts/consolas-powerline-vim/` 目录下的字体文件复制到 `C:\Windows\Fonts\` 下
 
 ## 支持lua
