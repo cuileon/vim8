@@ -55,3 +55,6 @@
 [submodule "pack/plugin/start/vim-php-namespace"]
 	path = pack/plugin/start/vim-php-namespace
 	url = git@github.com:arnaud-lb/vim-php-namespace.git
+[submodule "pack/plugin/start/ack.vim"]
+	path = pack/plugin/start/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
