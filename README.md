@@ -6,8 +6,8 @@ cd ~
 git clone git@github.com:cui-liang/vim8.git vimfiles
 cd vimfiles
 git submodule update --init --recursive
-cd pack/plugin/start/phpctags
-composer update
+#cd pack/plugin/start/phpctags
+#composer update
 ```
 
 ## mac 安装
@@ -19,7 +19,7 @@ brew install lua ctags homebrew/php/phpctags
 ```
 
 ## windows 安装 phpctags
-cd ~/usr/local/bin
+cd /usr/local/bin
 curl -Ss http://vim-php.com/phpctags/install/phpctags.phar > phpctags
 
 ## windows 设置环境变量
