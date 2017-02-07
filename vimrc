@@ -7,6 +7,9 @@ filetype plugin indent on
 " 设置文件的编码
 set encoding=utf-8
 
+" 设置文件的格式
+set fileformat=unix;
+
 " 针对 windows 的字体和编码做特殊配置
 if has('win32') || has('win64')
     " 模仿windows快捷键 Ctrl+A全选、Ctrl+C复制、Ctrl+V粘贴
