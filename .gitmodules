@@ -10,33 +10,15 @@
 [submodule "pack/plugin/start/tagbar"]
 	path = pack/plugin/start/tagbar
 	url = git@github.com:majutsushi/tagbar.git
-[submodule "pack/plugin/start/taglist.vim"]
-	path = pack/plugin/start/taglist.vim
-	url = git@github.com:vim-scripts/taglist.vim.git
 [submodule "pack/colors/start/vim-colors-solarized"]
 	path = pack/colors/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "pack/colors/start/molokai"]
-	path = pack/colors/start/molokai
-	url = git@github.com:tomasr/molokai.git
 [submodule "pack/plugin/start/phpcomplete.vim"]
 	path = pack/plugin/start/phpcomplete.vim
 	url = git@github.com:shawncplus/phpcomplete.vim.git
 [submodule "pack/plugin/start/vim-fugitive"]
 	path = pack/plugin/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule "pack/colors/start/vim-airline-themes"]
-	path = pack/colors/start/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
-[submodule "pack/plugin/start/vim-session"]
-	path = pack/plugin/start/vim-session
-	url = git@github.com:xolox/vim-session.git
-[submodule "pack/plugin/start/vim-misc"]
-	path = pack/plugin/start/vim-misc
-	url = git@github.com:xolox/vim-misc.git
-[submodule "pack/plugin/start/vim-easytags"]
-	path = pack/plugin/start/vim-easytags
-	url = git@github.com:xolox/vim-easytags.git
 [submodule "pack/plugin/start/tagbar-phpctags.vim"]
 	path = pack/plugin/start/tagbar-phpctags.vim
 	url = git@github.com:vim-php/tagbar-phpctags.vim.git
@@ -49,9 +31,6 @@
 [submodule "pack/plugin/start/supertab"]
 	path = pack/plugin/start/supertab
 	url = git@github.com:ervandew/supertab.git
-[submodule "pack/plugin/start/neocomplete.vim"]
-	path = pack/plugin/start/neocomplete.vim
-	url = git@github.com:Shougo/neocomplete.vim.git
 [submodule "pack/plugin/start/vim-php-namespace"]
 	path = pack/plugin/start/vim-php-namespace
 	url = git@github.com:arnaud-lb/vim-php-namespace.git
