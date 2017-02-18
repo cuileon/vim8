@@ -6,6 +6,8 @@ cd ~
 git clone git@github.com:cui-liang/vim8.git vimfiles
 cd vimfiles
 git submodule update --init --recursive
+cd ~
+ln -s /mnt/c/Users/cuiliang/vimfiles .vim
 #cd pack/plugin/start/phpctags
 #composer update
 ```
