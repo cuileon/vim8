@@ -1,5 +1,9 @@
 # vim8
 
+```
+git submodule add git@github.com:vim-airline/vim-airline-themes.git pack/colors/start/vim-airline-themes
+```
+
 ## windows 安装
 ```
 cd ~
