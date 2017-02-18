@@ -37,3 +37,6 @@
 [submodule "pack/plugin/start/ack.vim"]
 	path = pack/plugin/start/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "pack/colors/start/vim-airline-themes"]
+	path = pack/colors/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git

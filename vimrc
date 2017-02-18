@@ -76,7 +76,7 @@ set laststatus=2
 " 防止特殊符号无法正常显示
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 
 " Airline中显示tabline
