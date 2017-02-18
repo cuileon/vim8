@@ -12,6 +12,9 @@ cd vimfiles
 git submodule update --init --recursive
 cd ~
 ln -s /mnt/c/Users/cuiliang/vimfiles .vim
+
+# 加入环境变量
+%USERPROFILE%\vimfiles\pack\bin
 #cd pack/plugin/start/phpctags
 #composer update
 ```
