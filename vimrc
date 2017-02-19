@@ -10,6 +10,9 @@ set encoding=utf-8
 " 设置字体
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 
+"设置菜单为中文
+set langmenu=zh_CN.UTF-8
+
 " 针对 windows 的字体和编码做特殊配置
 if has('win32') || has('win64')
     " 模仿windows快捷键 Ctrl+A全选、Ctrl+C复制、Ctrl+V粘贴
@@ -17,18 +20,12 @@ if has('win32') || has('win64')
     source $VIMRUNTIME/mswin.vim
     behave mswin
 
-    " 解决信息提示的乱码
-    language messages zh_CN.utf-8
-
     " 解决菜单的乱码
     source $VIMRUNTIME/delmenu.vim
     source $VIMRUNTIME/menu.vim 
 
     " 防止特殊符号无法正常显示
     set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
-else
-    "设置菜单为中文
-    set langmenu=zh_CN.UTF-8
 endif
 
 " 显示行号
@@ -48,9 +45,9 @@ set hlsearch incsearch smartcase ignorecase
 
 " ctrlp 搜索太慢，这样忽略掉不需要的目录和权限即可
 let g:ctrlp_custom_ignore = {
-      \ 'dir':  'vendor/bundle/*\|vendor/cache/*\|public\|spec',
-      \ 'file': '\v\.(exe|so|dll|swp|log|jpg|png|json)$',
-      \ }
+    \ 'dir':  'vendor/bundle/*\|vendor/cache/*\|public\|spec',
+    \ 'file': '\v\.(exe|so|dll|swp|log|jpg|png|json)$',
+    \ }
 
 " 不保存备份文件
 set nobackup
@@ -64,7 +61,11 @@ syntax enable
 set background=dark
 
 " 设置主题
+let g:solarized_menu=0
 colorscheme solarized
+
+" NERDCommenter 配置
+let g:NERDMenuMode=0
 
 " NERDTree 配置
 let g:NERDTreeDirArrowExpandable = '▸'
@@ -95,10 +96,19 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
 
-" ctags配置
+" ctags 配置
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
 set completeopt=longest,menu
 let g:tagbar_phpctags_memory_limit = '1024M'
+let g:easytags_cmd = 'phpctags'
+let g:easytags_dynamic_files = 1
+
+" session 配置
+let g:session_menu = 0
+let g:session_autosave = 'no'
+
+" notes 配置
+:let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
 
 " 语法检查
 let g:syntastic_check_on_open=1
@@ -109,3 +119,64 @@ let g:syntastic_html_checkers=['tidy', 'jshint']
 
 " superTab 配置
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+
+" 以下为 neocomplete 的配置
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scheme' : $HOME.'/.gosh_completions'
+        \ }
+
+" Define keyword.
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+" Plugin key-mappings.
+inoremap <expr><C-g>     neocomplete#undo_completion()
+inoremap <expr><C-l>     neocomplete#complete_common_string()
+
+" Recommended key-mappings.
+" <CR>: close popup and save indent.
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+  " For no inserting <CR> key.
+  "return pumvisible() ? "\<C-y>" : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+
+" ack 配置
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif

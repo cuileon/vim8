@@ -40,3 +40,21 @@
 [submodule "pack/colors/start/vim-airline-themes"]
 	path = pack/colors/start/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "pack/plugin/start/neocomplete.vim"]
+	path = pack/plugin/start/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "pack/plugin/start/vim-easytags"]
+	path = pack/plugin/start/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
+[submodule "pack/plugin/start/vim-misc"]
+	path = pack/plugin/start/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule "pack/plugin/start/vim-session"]
+	path = pack/plugin/start/vim-session
+	url = git@github.com:xolox/vim-session.git
+[submodule "pack/plugin/start/vim-notes"]
+	path = pack/plugin/start/vim-notes
+	url = git@github.com:xolox/vim-notes.git
+[submodule "pack/plugin/start/vim-shell"]
+	path = pack/plugin/start/vim-shell
+	url = git@github.com:xolox/vim-shell.git
