@@ -1,5 +1,9 @@
 # vim8
 
+## sed 安装
+http://gnuwin32.sourceforge.net/packages/sed.htm
+https://dotblogs.com.tw/jses88001/2014/11/13/147283
+
 ```
 git submodule add git@github.com:vim-airline/vim-airline-themes.git pack/colors/start/vim-airline-themes
 ```
@@ -12,6 +16,9 @@ cd vimfiles
 git submodule update --init --recursive
 cd ~
 ln -s /mnt/c/Users/cuiliang/vimfiles .vim
+
+# 加入环境变量
+%USERPROFILE%\vimfiles\pack\bin
 #cd pack/plugin/start/phpctags
 #composer update
 ```
