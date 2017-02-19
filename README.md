@@ -1,5 +1,8 @@
 # vim8
 
+## sed 安装
+http://gnuwin32.sourceforge.net/packages/sed.htm
+
 ```
 git submodule add git@github.com:vim-airline/vim-airline-themes.git pack/colors/start/vim-airline-themes
 ```
