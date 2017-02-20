@@ -15,7 +15,7 @@ git clone git@github.com:cui-liang/vim8.git vimfiles
 cd vimfiles
 git submodule update --init --recursive
 cd ~
-ln -s /mnt/c/Users/cuiliang/vimfiles .vim
+ln -s /mnt/c/Users/cuiliang/vimfiles/ .vim
 
 # 加入环境变量
 %USERPROFILE%\vimfiles\pack\bin
