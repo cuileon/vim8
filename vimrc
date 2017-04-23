@@ -54,6 +54,9 @@ set nobackup
 set noundofile
 set noswapfile
 
+" 允许不保存 buffer 时切换
+set hidden
+
 " 语法高亮显示
 syntax enable
 
@@ -99,10 +102,6 @@ nmap <leader>+ <Plug>AirlineSelectNextTab
 " ctags 配置
 autocmd FileType PHP set omnifunc=phpcomplete#CompletePHP
 set completeopt=longest,menu
-let g:tagbar_phpctags_memory_limit = '1024M'
-let g:easytags_cmd = 'phpctags'
-let g:easytags_dynamic_files = 1
-let b:easytags_auto_highlight = 0
 
 " session 配置
 let g:session_menu = 0
@@ -125,3 +124,4 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 if executable('ag')
     let g:ackprg = 'ag --vimgrep'
 endif
+
