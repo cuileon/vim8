@@ -29,12 +29,13 @@ cd ~
 git clone git@github.com:cui-liang/vim8.git .vim
 cd .vim
 git submodule update --init --recursive
-brew install lua ctags homebrew/php/phpctags
+
+brew tap universal-ctags/universal-ctags
+brew install --HEAD universal-ctags
 ```
 
-## windows 安装 phpctags
-cd /usr/local/bin
-curl -Ss http://vim-php.com/phpctags/install/phpctags.phar > phpctags
+## windows 安装 Universal Ctags
+https://github.com/universal-ctags/ctags-win32/releases
 
 ## windows 设置环境变量
 将 `vimfiles/pack/bin` 加入系统环境变量
@@ -42,5 +43,3 @@ curl -Ss http://vim-php.com/phpctags/install/phpctags.phar > phpctags
 ## 安装字体
 https://github.com/powerline/fonts/raw/master/DejaVuSansMono/DejaVu%20Sans%20Mono%20for%20Powerline.ttf
 
-## 支持lua
-将 `vimfiles/pack/bin` 目录下的 lua53.dll 放到 `gvim.exe` 同目录下
