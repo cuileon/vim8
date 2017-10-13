@@ -108,9 +108,6 @@ set completeopt=longest,menu
 let g:session_menu = 0
 let g:session_autosave = 'no'
 
-" notes 配置
-:let g:notes_directories = ['~/Documents/Notes', '~/Dropbox/Shared Notes']
-
 " 语法检查
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_highlighting=1
