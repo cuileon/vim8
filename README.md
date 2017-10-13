@@ -25,6 +25,7 @@ ln -s /mnt/c/Users/cuiliang/vimfiles/ .vim
 
 ## mac 安装
 ```
+cd ~
 git clone git@github.com:cui-liang/vim8.git .vim
 cd .vim
 git submodule update --init --recursive
