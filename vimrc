@@ -64,6 +64,7 @@ syntax enable
 set background=dark
 
 " 设置主题
+let g:solarized_termtrans=1
 let g:solarized_menu=0
 colorscheme solarized
 
