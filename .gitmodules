@@ -37,3 +37,6 @@
 [submodule "pack/colors/start/vim-airline-themes"]
 	path = pack/colors/start/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "pack/plugin/start/vim-dirdiff"]
+	path = pack/plugin/start/vim-dirdiff
+	url = git@github.com:will133/vim-dirdiff.git
